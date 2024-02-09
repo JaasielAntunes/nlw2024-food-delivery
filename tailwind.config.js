@@ -5,7 +5,14 @@ module.exports = {
     "./src/components/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        heading: "Poppins_600SemiBold",
+        body: "Poppins_400Regular",
+        subtitle: "Poppins_500Medium",
+        bold: "Poppins_700Bold",
+      },
+    },
   },
   plugins: [],
 }
