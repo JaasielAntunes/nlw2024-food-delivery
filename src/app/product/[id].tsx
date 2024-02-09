@@ -1,15 +1,17 @@
-import { View, Image, Text } from 'react-native';
+import { View, Image, Text, ScrollView } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
+import { Feather } from '@expo/vector-icons';
 
 import { PRODUCTS } from '@/utils/data/products';
 import { formatCurrency } from '@/utils/functions/format-currency';
+import { Button } from '@/components/button';
 
 export default function Product() {
   const { id } = useLocalSearchParams();
   const product = PRODUCTS.filter((product) => product.id === id)[0];
 
   return (
-    <View className="flex-1">
+    <ScrollView className="flex-1">
       <Image
         source={product.cover}
         className="w-full h-50"
@@ -31,6 +33,18 @@ export default function Product() {
           </Text>
         ))}
       </View>
-    </View>
+
+      <View className="p-5 pb-8 gap-5">
+        <Button>
+          <Button.Icon>
+            <Feather name="plus-circle" size={20} />
+          </Button.Icon>
+
+          <Button.Text>
+            Adicionar ao pedido
+          </Button.Text>
+        </Button>
+      </View>
+    </ScrollView>
   )
 }
