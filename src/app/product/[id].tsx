@@ -1,5 +1,5 @@
 import { View, Image, Text, ScrollView } from 'react-native';
-import { useLocalSearchParams, useNavigation } from 'expo-router';
+import { useLocalSearchParams, useNavigation, Redirect } from 'expo-router';
 import { Feather } from '@expo/vector-icons';
 
 import { PRODUCTS } from '@/utils/data/products';
@@ -13,11 +13,15 @@ export default function Product() {
   const navigation = useNavigation();
 
   const { id } = useLocalSearchParams();
-  const product = PRODUCTS.filter((product) => product.id === id)[0];
+  const product = PRODUCTS.find((product) => product.id === id);
 
   function handleAddToCart() {
-    cartStore.add(product);
+    cartStore.add(product!);
     navigation.goBack();
+  }
+
+  if (!product) {
+    return <Redirect href="/" />
   }
 
   return (
@@ -29,6 +33,10 @@ export default function Product() {
       />
 
       <View className="p-4">
+        <Text className="text-white text-xl font-bold">
+          {product.title}
+        </Text>
+
         <Text className="text-sky-400 text-2xl font-heading my-2">
           {formatCurrency(product.price)}
         </Text>
