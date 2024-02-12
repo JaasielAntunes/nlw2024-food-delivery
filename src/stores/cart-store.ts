@@ -12,6 +12,7 @@ type StateProps = {
   products: ProductCartProps[];
   add: (product: ProductProps) => void;
   remove: (productId: string) => void;
+  clear: () => void;
 };
 
 export const useCartStore = create(
