@@ -13,7 +13,7 @@ export default function Product() {
   const navigation = useNavigation();
 
   const { id } = useLocalSearchParams();
-  const product = PRODUCTS.find((product) => product.id === id);
+  const product = PRODUCTS.find((item) => item.id === id);
 
   function handleAddToCart() {
     cartStore.add(product!);
