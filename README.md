@@ -17,7 +17,7 @@ da aplicação.
 
 ---
 
-## Pré-requisitos
+## Requisitos
 
 - Node.js versão 20 ou superior;
 
