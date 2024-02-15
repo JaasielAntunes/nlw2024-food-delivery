@@ -1,6 +1,7 @@
 <h1 align="center">
   Aplicação Full Stack Mobile desenvolvida durante a Trilha React Native no evento NLW Expert da Rocketseat em 2024.
-</h1>
+</h1> 
+<br>
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 
