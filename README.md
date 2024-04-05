@@ -1,5 +1,5 @@
 <h1 align="center">
-  Aplicação Full Stack Mobile desenvolvida durante a Trilha React Native no evento NLW Expert da Rocketseat em 2024.
+  Aplicação Full Stack Mobile desenvolvida durante a Trilha React Native no evento NLW Expert da <a href="https://app.rocketseat.com.br/home">Rocketseat</a>.
 </h1> 
 <br>
 
