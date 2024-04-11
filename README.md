@@ -25,7 +25,7 @@ da aplicação.
 
 ---
 
-## 💻 Tecnologias utilizadas
+## 💻 Tecnologias
 
 - babel/core
 - types/react
