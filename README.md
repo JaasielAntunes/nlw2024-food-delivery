@@ -27,13 +27,14 @@ da aplicação.
 
 ## 💻 Tecnologias
 
-- babel/core
-- types/react
-- jest
-- jest-expo
-- react-test-renderer
-- tailwindcss
-- typescript
+- Babel/core
+- Types/react
+- Jest
+- Jest-expo
+- React-test-renderer
+- Tailwindcss
+- JavaScript
+- Typescript
 
 > Veja o arquivo [package.json](https://github.com/JaasielAntunes/nlw2024-food-delivery/blob/master/package.json) para ver todas.
 
